@@ -1,0 +1,45 @@
+/**
+ * Very basic styling for the header.
+ */
+.site-logo-text {
+    font-size: 2em;
+    line-height: 1.8em;
+
+    a {
+        text-decoration: none;
+    }
+
+    a:link,
+    a:visited {
+        color: @dark-green;
+    }
+
+    a:hover,
+    a:active {
+        color: @light-green;
+    }
+}
+
+.navbar2 {
+    display: inline-block;
+    ul {
+        padding-left: 5%;
+        width: 100%;
+        li {
+            background-color: @dark-green;
+
+            a:link {
+                color: @light-green;
+            }
+            a:visited,
+            a:active,
+            a:hover {
+                text-decoration: none;
+                color: @std-link;
+            }
+        }
+        li:hover {
+            background-color: @light-green;
+        }
+    }
+}

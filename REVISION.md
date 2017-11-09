@@ -1,6 +1,15 @@
 Revision history
 ===============================
 
+v2.0.0 (2017-11-09)
+-------------------------------
+* Pages made responsive
+* Tagged with 2.0.0 for school requirements
+
+v1.0.0 (2017-11-09)
+-------------------------------
+* Style changed to fit Incitatus's needs
+
 
 v0.2.2 (2017-11-07)
 -------------------------------

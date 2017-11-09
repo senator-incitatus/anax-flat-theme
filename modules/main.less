@@ -1,0 +1,60 @@
+/**
+ * Needed something for the main things.
+ */
+img {
+    max-width: 950px;
+}
+
+.breadcrumb-list {
+    ul {
+        list-style-type: none;
+        background-color: @dark-green;
+        padding: 5px 0;
+        margin-bottom: 0;
+
+        li {
+            display: inline-block;
+            padding: 0 15px;
+
+            a:link {
+                text-decoration: none;
+                color: @light-green;
+            }
+            a:visited,
+            a:active,
+            a:hover {
+                text-decoration: none;
+                color: @std-link;
+            }
+        }
+
+        li:last-child {
+            font-weight: bold;
+            font-size: 1.2em;
+            text-decoration: unerline;
+        }
+    }
+}
+
+h1 {
+    color: @dark-green;
+}
+
+h4 {
+    color: @dark-green;
+    margin: 0;
+}
+
+p {
+    text-align: justify;
+}
+
+a:link,
+a:visited {
+    color: @dark-green;
+}
+
+a:active,
+a:hover {
+    color: @light-green;
+}
