@@ -1,8 +1,14 @@
 /**
  * Needed something for the main things.
+ * Background from Subtle Patterns
  */
 img {
-    max-width: 950px;
+    max-width: 100%;
+}
+
+body {
+    background: url('../img/concrete-texture.png') top left repeat #fff;
+    font-family: @customBody;
 }
 
 .breadcrumb-list {
@@ -11,6 +17,7 @@ img {
         background-color: @dark-green;
         padding: 5px 0;
         margin-bottom: 0;
+        font-family: @customHeadings;
 
         li {
             display: inline-block;
@@ -36,17 +43,31 @@ img {
     }
 }
 
-h1 {
-    color: @dark-green;
+.inner-wrap-flash,
+.inner-wrap-breadcrumb,
+.inner-wrap-main,
+.inner-wrap-after-main,
+.inner-wrap-footer {
+    .row {
+        background-color: none;
+        background: rgba(255,255,255,0.4);
+        border-left: 2px solid rgba(0,0,0,0.2);
+        border-right: 2px solid rgba(0,0,0,0.2);
+        box-sizing: border-box;
+        }
 }
 
-h4 {
+h1, h2, h3, h4, h5, h6 {
+    font-family: @customHeadings;
     color: @dark-green;
-    margin: 0;
 }
 
 p {
     text-align: justify;
+}
+
+.sidebar p {
+    text-align: left;
 }
 
 a:link,
@@ -57,4 +78,12 @@ a:visited {
 a:active,
 a:hover {
     color: @light-green;
+}
+
+.next {
+    float: right;
+}
+
+.previous {
+    float: left;
 }

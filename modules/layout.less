@@ -1,0 +1,78 @@
+@import "vertical/grid.less";
+@import url(grid-helpers.less);
+
+@gridImg: "../img/grid940x12x60x20-nomargin.png";
+@hGridImg: "../img/magic-number-24.png";
+
+.inner-wrap {
+    #vgrid .grid(950px);
+
+    html.vgrid & {
+        .showGrid(950px, @gridImg);
+    }
+
+    html.hgrid & {
+        .showHGrid(@hGridImg);
+    }
+}
+
+.route-grid {
+    .wrap-all {
+        .outer-wrap {
+            .inner-wrap {
+                .showGrid(950px, @gridImg);
+            }
+        }
+    }
+}
+
+.route-typography {
+    .wrap-all {
+        .outer-wrap {
+            .inner-wrap {
+                .showHGrid(@hGridImg);
+            }
+        }
+    }
+}
+
+.row {
+    #vgrid .row();
+}
+
+.main {
+    #vgrid .column(10);
+    #vgrid .push(1);
+}
+
+.footer-column {
+    #vgrid .column(4);
+}
+
+.site-footer {
+    #vgrid .column(12);
+}
+
+.site-logo-text {
+    #vgrid .column(7);
+}
+
+.navbar2 {
+    #vgrid .column(5);
+}
+
+.flash-wrap {
+    #vgrid .column(12);
+}
+
+.breadcrumb-wrap {
+    #vgrid .column(12);
+}
+
+.sidebar-left {
+    #vgrid .column(2);
+}
+
+main.has-sidebar-left {
+    #vgrid .column(9);
+}

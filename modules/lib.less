@@ -1,8 +1,19 @@
 /**
  * Variable library!
  */
+
+@import url('https://fonts.googleapis.com/css?family=Lora');
+@import url('https://fonts.googleapis.com/css?family=Slabo+27px');
+@import url('https://fonts.googleapis.com/css?family=Merriweather+Sans');
+
 @light-green: #728f4f;
 @dark-green: #527431;
 @std-link: #bebfa8;
 
 @lighter-green: @light-green + #555;
+@darker-green: @dark-green - #555;
+@black-green: @darker-green - #111;
+
+@customHeadings: "Merriweather Sans", @fontFamilyHelvetica;
+@customBody: "Slabo 27px", @fontFamilyHeadings;
+@headerFont: Lora, @fontFamilyHeadings;

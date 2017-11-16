@@ -1,3 +1,5 @@
+@import "vertical/grid.less";
+
 /**
  * Media queries for the curious.
  */
@@ -7,9 +9,12 @@
     }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
+    .rm-desktop {
+        display: none;
+    }
     .site-logo-text {
-        font-size: 1.7em;
+        font-size: 1.875em;
     }
 
     img.big-img {
@@ -22,23 +27,23 @@
 }
 
 @media screen and (max-width: 620px) {
-    .rm-desktop {
-        display: none;
+    .site-logo-text {
+        font-size: 1.375em;
     }
 
     .footer-column {
-        width: 50%;
+        #vgrid .column(6);
+        border-top: 0;
     }
 
     .footer-column-wrapper > div:first-of-type {
-        float: none;
         width: 100%;
+        #vgrid .column(12);
     }
 
-    .sidebar {
-        background-color: @light-green;
-        width: 100%;
-        float: none;
+    .sidebar-left {
+        #vgrid .column(12);
+
         .block {
             ul {
                 color: @std-link;
@@ -46,6 +51,7 @@
                 padding: 0;
                 list-style-type: none;
                 text-align: center;
+                background-color: @light-green;
 
                 li {
                     display: inline-block;
@@ -62,5 +68,10 @@
         a:visited {
             color: @lighter-green;
         }
+    }
+
+
+    .main, main.has-sidebar-left {
+        #vgrid .column(12);
     }
 }

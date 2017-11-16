@@ -184,7 +184,23 @@ upgrade-responsive-menu:
 	cp node_modules/desinax-responsive-menu/src/less/responsive-menu.less modules/
 	cp node_modules/desinax-responsive-menu/src/js/responsive-menu.js js/
 
+# target: upgrade-typographic-grid - Upgrade desinax typographic grid
+.PHONY: upgrade-typographic-grid
+upgrade-typographic-grid:
+	@$(call HELPTEXT,$@)
+	npm update desinax-typographic-grid
+	cp node_modules/desinax-typographic-grid/less/* modules/typographic/
+	cp node_modules/desinax-typographic-grid/img/* ../htdocs/img/
+
+# target: upgrade-vertical-grid - Upgrde desinax vertical grid
+.PHONY: upgrade-vertical-grid
+upgrade-vertical-grid:
+	@$(call HELPTEXT,$)
+	npm update desinax-vertical-grid
+	cp node_modules/desinax-vertical-grid/less/* modules/vertical/
+	cp node_modules/desinax-vertical-grid/img/* ../htdocs/img/
+
 # target: upgrade            - Upgraded external LESS modules
 .PHONY: upgrade
-upgrade: upgrade-normalize upgrade-responsive-menu
+upgrade: upgrade-normalize upgrade-responsive-menu upgrade-typographic-grid upgrade-vertical-grid
 	@$(call HELPTEXT,$@)

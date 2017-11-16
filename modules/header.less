@@ -2,8 +2,7 @@
  * Very basic styling for the header.
  */
 .site-logo-text {
-    font-size: 2em;
-    line-height: 1.8em;
+    font-size: 2.375em;
 
     a {
         text-decoration: none;
@@ -11,13 +10,15 @@
 
     a:link,
     a:visited {
-        color: @dark-green;
+        color: @std-link;
     }
 
     a:hover,
     a:active {
         color: @light-green;
     }
+
+    font-family: @headerFont; // @customBody;
 }
 
 .navbar2 {
@@ -26,9 +27,9 @@
         padding-left: 5%;
         width: 100%;
         li {
-            background-color: @dark-green;
 
             a:link {
+                padding: 1.2632em 5px;
                 color: @light-green;
             }
             a:visited,
@@ -40,6 +41,18 @@
         }
         li:hover {
             background-color: @light-green;
+        }
+    }
+}
+
+.outer-wrap-header {
+    background-color: @darker-green;
+}
+
+.rm-max {
+    .rm-small {
+        .rm-button {
+            color: @std-link;
         }
     }
 }

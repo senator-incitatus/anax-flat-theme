@@ -1,6 +1,11 @@
 Revision history
 ===============================
 
+v3.0.0 (2017-11-16)
+-------------------------------
+* Grid based design
+* Tagged with 3.0.0 for school requirements
+
 v2.0.0 (2017-11-09)
 -------------------------------
 * Pages made responsive
