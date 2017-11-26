@@ -1,0 +1,142 @@
+/** Footer */
+
+.site-footer {
+    background-color: @medium-gray;
+    color: @dark-gray;
+
+    p {
+        background-color: @mid-gray;
+        color: @light-gray;
+    }
+
+    a:link,
+    a:visited {
+        text-decoration: none;
+        color: @dark-gray;
+    }
+
+    a:active,
+    a:hover {
+        color: @dark-gray;
+    }
+}
+
+.footer-column {
+    border-top: 2px solid rgba(0,0,0,0.2);
+}
+
+/** Header */
+
+.site-logo-text {
+    font-family: @headerFont;
+    width: auto;
+
+    a:link,
+    a:visited {
+        color: @dark-gray;
+    }
+
+    a:hover,
+    a:active {
+        opacity: 0.8;
+    }
+}
+
+.site-logo-text-icon {
+    display: none;
+}
+
+.navbar2 {
+    width: 50%;
+
+    ul {
+        font-family: @customHeadings;
+        font-size: 1.25em;
+        line-height: 1.2em;
+
+        li {
+
+            a:link,
+            a:visited {
+                color: @dark-gray;
+            }
+
+            a:active,
+            a:hover {
+                text-transform: uppercase;
+            }
+        }
+    }
+}
+
+.outer-wrap-header {
+    background-color: @light-gray;
+    background: rgba(255,255,255,0.5);
+}
+
+.rm-max {
+    .rm-small {
+        .rm-button {
+            color: @dark-gray;
+        }
+    }
+}
+
+/** Main layout elements.
+ * Background from Subtle Patterns
+ */
+
+ body {
+     background: url('../img/grey_wash_wall.png') top left repeat #fff;
+ }
+
+ .breadcrumb-list {
+     ul {
+         background-color: @medium-gray;
+         background: linear-gradient(@medium-gray, @mid-gray);
+
+         li {
+             a:link,
+             a:visited {
+                 color: @light-gray;
+             }
+
+             a:active,
+             a:hover {
+                 color: @hover;
+             }
+         }
+     }
+ }
+
+ .inner-wrap-flash,
+ .inner-wrap-breadcrumb,
+ .inner-wrap-main,
+ .inner-wrap-after-main,
+ .inner-wrap-footer {
+     .row {
+         background: rgba(190,189,189,0.6);
+         border-left: 2px solid rgba(0,0,0,0.2);
+         border-right: 2px solid rgba(0,0,0,0.2);
+         }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: @dark-gray;
+}
+
+a:link,
+a:visited {
+    color: @dark-gray;
+}
+
+a:active,
+a:hover {
+    color: @mid-gray;
+    text-transform: uppercase;
+}

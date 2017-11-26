@@ -1,0 +1,138 @@
+/** Footer */
+
+.site-footer {
+    background-color: @main-light;
+    color: @main-lighter;
+
+    p {
+        background-color: @main-medium;
+        color: @main-lighter;
+    }
+
+    a:link,
+    a:visited {
+        text-decoration: none;
+        color: @main-lightest;
+    }
+
+    a:active,
+    a:hover {
+        color: @main-lighter;
+    }
+}
+
+.footer-column {
+    border-top: 2px solid rgba(0,0,0,0.2);
+}
+
+/** Header */
+
+.site-logo-text {
+    a:link,
+    a:visited {
+        color: @accent-medium;
+    }
+
+    a:hover,
+    a:active {
+        color: @accent-dark;
+    }
+}
+
+.navbar2 {
+    ul {
+        li {
+
+            a:link,
+            a:visited {
+                color: @accent-dark;
+            }
+
+            a:active,
+            a:hover {
+                color: @accent-darkest;
+            }
+        }
+        li:hover {
+            background-color: @accent-dark;
+            background: rgba(0,0,0,0.1);
+        }
+    }
+}
+
+.outer-wrap-header {
+    background-color: @accent-lightest;
+}
+
+.rm-max {
+    .rm-small {
+        .rm-button {
+            color: @accent-dark;
+        }
+    }
+}
+
+/** Main layout elements.
+ * Background from Subtle Patterns
+ */
+
+ body {
+     background: url('../img/tree_bark.png') top left repeat #fff;
+ }
+
+ .breadcrumb-list {
+     ul {
+         background-color: @support-medium;
+         border-bottom: 1px solid @support-dark;
+
+         li {
+             a:link,
+             a:visited {
+                 color: @support-lightest;
+             }
+
+             a:active,
+             a:hover {
+                 color: @support-light;
+             }
+         }
+
+         li:last-child {
+             a:link,
+             a:visited {
+                 color: @support-lightest;
+             }
+         }
+     }
+ }
+
+ .inner-wrap-flash,
+ .inner-wrap-breadcrumb,
+ .inner-wrap-main,
+ .inner-wrap-after-main,
+ .inner-wrap-footer {
+     .row {
+         background: rgba(109,129,129,0.8);
+         border-left: 2px solid rgba(0,0,0,0.2);
+         border-right: 2px solid rgba(0,0,0,0.2);
+         }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: @support-darkest;
+}
+
+a:link,
+a:visited {
+    color: @main-darkest;
+}
+
+a:active,
+a:hover {
+    color: @main-medium;
+}

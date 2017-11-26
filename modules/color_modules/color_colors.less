@@ -1,0 +1,153 @@
+/** Footer */
+
+.site-footer {
+    background-color: @light-pink;
+    color: @dark-pink;
+
+    p {
+        background-color: @medium-pink;
+        color: @darkest-pink;
+    }
+
+    a:link,
+    a:visited {
+        text-decoration: none;
+        color: @dark-pink;
+    }
+
+    a:active,
+    a:hover {
+        color: @darkest-pink;
+    }
+}
+
+.footer-column {
+    border-top: 2px solid rgba(0,0,0,0.2);
+
+    a:link,
+    a:visited {
+        text-decoration: none;
+        color: @darkest-pink;
+    }
+
+    a:active,
+    a:hover {
+        color: @medium-pink;
+    }
+}
+
+/** Header */
+
+.site-logo-text {
+    a:link,
+    a:visited {
+        color: @medium-pink;
+    }
+
+    a:hover,
+    a:active {
+        color: @dark-pink;
+    }
+
+    width: auto;
+}
+
+.navbar2 {
+    width: 50%;
+    ul {
+        li {
+
+            a:link,
+            a:visited {
+                color: @medium-pink;
+            }
+
+            a:active,
+            a:hover {
+                color: @light-pink;
+            }
+        }
+        li:hover {
+            background-color: @dark-pink;
+            background: rgba(0,0,0,0.1);
+        }
+    }
+}
+
+.outer-wrap-header {
+    background-color: @light-pink;
+    border-bottom: 3px solid @medium-pink;
+}
+
+.rm-max {
+    .rm-small {
+        .rm-button {
+            color: @dark-pink;
+        }
+    }
+}
+
+/** Main layout elements.
+ * Background from Subtle Patterns
+ */
+
+ body {
+     background: url('../img/pink_rice.png') top left repeat #fff;
+ }
+
+ .breadcrumb-list {
+     ul {
+         background-color: @medium-pink;
+         border-bottom: 1px solid @accent-dark;
+
+         li {
+             a:link,
+             a:visited {
+                 color: @accent-dark;
+             }
+
+             a:active,
+             a:hover {
+                 color: @light-pink;
+             }
+         }
+
+         li:last-child {
+             a:link,
+             a:visited {
+                 color: @accent-dark;
+             }
+         }
+     }
+ }
+
+ .inner-wrap-flash,
+ .inner-wrap-breadcrumb,
+ .inner-wrap-main,
+ .inner-wrap-after-main,
+ .inner-wrap-footer {
+     .row {
+         background: rgba(239,203,213,0.3);
+         border-left: 2px solid rgba(0,0,0,0.2);
+         border-right: 2px solid rgba(0,0,0,0.2);
+         }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: @darkest-pink;
+}
+
+a:link,
+a:visited {
+    color: @darkest-pink;
+}
+
+a:active,
+a:hover {
+    color: @medium-pink;
+}

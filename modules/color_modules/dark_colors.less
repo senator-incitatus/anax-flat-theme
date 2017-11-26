@@ -1,0 +1,136 @@
+/** Footer */
+
+.site-footer {
+    background-color: @main-medium;
+    color: @main-light;
+
+    p {
+        background-color: @comp-medium;
+        color: @comp-lightest;
+    }
+
+    a:link,
+    a:visited {
+        text-decoration: none;
+        color: @main-light;
+    }
+
+    a:active,
+    a:hover {
+        color: @main-lightest;
+    }
+}
+
+.footer-column {
+    border-top: 2px solid rgba(0,0,0,0.2);
+}
+
+/** Header */
+
+.site-logo-text {
+    a:link,
+    a:visited {
+        color: @comp-lightest;
+    }
+
+    a:hover,
+    a:active {
+        color: @comp-hover;
+    }
+
+}
+
+.navbar2 {
+    text-align: right;
+
+    ul {
+        li {
+
+            a:link,
+            a:visited {
+                color: @comp-lightest;
+            }
+
+            a:active,
+            a:hover {
+                color: @comp-hover;
+            }
+        }
+        li:hover {
+            background-color: @comp-dark;
+            background: rgba(0,0,0,0.1);
+        }
+    }
+}
+
+.outer-wrap-header {
+    background-color: @comp-medium;
+}
+
+.rm-max {
+    .rm-small {
+        .rm-button {
+            color: @comp-lightest;
+        }
+    }
+}
+
+/** Main layout elements.
+ * Background from Subtle Patterns
+ */
+
+ body {
+     background: url('../img/zwartevilt.png') top left repeat #fff;
+     color: #9d9492;
+ }
+
+ .breadcrumb-list {
+     ul {
+         background-color: @main-darkest;
+
+         li {
+             a:link,
+             a:visited {
+                 color: @main-light;
+             }
+
+             a:active,
+             a:hover {
+                 color: @main-lightest;
+             }
+         }
+
+         li:last-child {
+             a:link,
+             a:visited {
+                 color: @main-light;
+             }
+         }
+     }
+ }
+
+ .inner-wrap-flash,
+ .inner-wrap-breadcrumb,
+ .inner-wrap-main,
+ .inner-wrap-after-main,
+ .inner-wrap-footer {
+     .row {
+         background: rgba(40, 35, 34, 0.7);
+         border-left: 2px solid rgba(0,0,0,0.2);
+         border-right: 2px solid rgba(0,0,0,0.2);
+         }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: @comp-lightest;
+}
+
+a:link,
+a:visited {
+    color: @main-light;
+}
+
+a:active,
+a:hover {
+    color: @main-lightest;
+}

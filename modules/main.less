@@ -7,14 +7,12 @@ img {
 }
 
 body {
-    background: url('../img/concrete-texture.png') top left repeat #fff;
     font-family: @customBody;
 }
 
 .breadcrumb-list {
     ul {
         list-style-type: none;
-        background-color: @dark-green;
         padding: 5px 0;
         margin-bottom: 0;
         font-family: @customHeadings;
@@ -25,20 +23,17 @@ body {
 
             a:link {
                 text-decoration: none;
-                color: @light-green;
             }
             a:visited,
             a:active,
             a:hover {
                 text-decoration: none;
-                color: @std-link;
             }
         }
 
         li:last-child {
             font-weight: bold;
             font-size: 1.2em;
-            text-decoration: unerline;
         }
     }
 }
@@ -50,16 +45,12 @@ body {
 .inner-wrap-footer {
     .row {
         background-color: none;
-        background: rgba(255,255,255,0.4);
-        border-left: 2px solid rgba(0,0,0,0.2);
-        border-right: 2px solid rgba(0,0,0,0.2);
         box-sizing: border-box;
         }
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: @customHeadings;
-    color: @dark-green;
 }
 
 p {
@@ -70,20 +61,30 @@ p {
     text-align: left;
 }
 
-a:link,
-a:visited {
-    color: @dark-green;
-}
-
-a:active,
-a:hover {
-    color: @light-green;
-}
-
 .next {
     float: right;
 }
 
 .previous {
     float: left;
+}
+
+.colorbox {
+    display: inline-block;
+    margin: 0 5px;
+    border: 1px solid #000;
+    width: 50px;
+    height: 50px;
+}
+
+.logo-1 {
+    position: absolute;
+    top: 70px;
+    left: -140px;
+}
+
+.site-logo-text-icon {
+    img {
+        vertical-align: bottom;
+    }
 }
