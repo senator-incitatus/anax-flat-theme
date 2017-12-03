@@ -1,6 +1,11 @@
 Revision history
 ===============================
 
+v5.0.0(2017-12-03)
+-------------------------------
+* Moved the navigation bar down on all themes
+* Added figure.less
+
 v4.0.0(2017-11-26)
 -------------------------------
 * Added different themes to the theme selector
