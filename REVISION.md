@@ -1,6 +1,10 @@
 Revision history
 ===============================
 
+v6.0.0(2018-01-03)
+-------------------------------
+* Added three themes; texture, photo, and gradient
+
 v5.0.0(2017-12-03)
 -------------------------------
 * Moved the navigation bar down on all themes

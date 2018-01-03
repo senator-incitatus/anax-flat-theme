@@ -1,0 +1,178 @@
+/** Footer */
+
+.site-footer {
+    color: @main-light;
+    background: rgba(45, 41, 40, 0.7);
+
+    p {
+        color: @comp-lightest;
+    }
+
+    a:link,
+    a:visited {
+        text-decoration: none;
+        color: @banner-color;
+    }
+
+    a:active,
+    a:hover {
+        color: @main-lightest;
+    }
+}
+
+.footer-column {
+    border-top: 2px solid rgba(0,0,0,0.2);
+    background: rgba(45, 41, 40, 0.7);
+    padding-left: 5px;
+
+    a:link,
+    a:visited {
+        color: @banner-color;
+    }
+
+    a:active,
+    a:hover {
+        color: @main-lightest;
+    }
+}
+
+/** Header */
+
+.site-logo-text {
+    a:link,
+    a:visited {
+        color: #ffe1d0;
+    }
+
+    a:hover,
+    a:active {
+        color: @banner-color;
+    }
+
+}
+
+.logo-1 {
+    display: none;
+}
+
+.navbar2 {
+    text-align: right;
+    position: absolute;
+    bottom: 0;
+
+    ul {
+        li {
+
+            a:link,
+            a:visited {
+                color: @banner-color;
+            }
+
+            a:active,
+            a:hover {
+                color: @banner-color;
+            }
+        }
+        li:hover {
+            background-color: @comp-dark;
+            background: rgba(0,0,0,0.1);
+        }
+    }
+}
+
+.outer-wrap-header {
+    background: url(@banner-image) top center no-repeat;
+    height: 205px;
+    border-bottom: 5px solid @main-darkest;
+}
+
+.inner-wrap-header {
+    .row {
+        height: 205px;
+        position: relative;
+    }
+}
+
+ul.rm-desktop {
+    background: rgba(45, 41, 40, 0.7);
+}
+
+.rm-max {
+    .rm-small {
+        .rm-button {
+            color: @banner-color;
+        }
+    }
+}
+
+/** Main layout elements.
+ * Background from Subtle Patterns
+ */
+
+ body {
+     background: url('../img/photo_background.png') top left repeat #fff;
+     background-attachment: fixed;
+     color: #9d9492;
+ }
+
+ .breadcrumb-list {
+     ul {
+         background-color: @main-darkest;
+
+         li {
+             a:link,
+             a:visited {
+                 color: @main-light;
+             }
+
+             a:active,
+             a:hover {
+                 color: @main-lightest;
+             }
+         }
+
+         li:last-child {
+             a:link,
+             a:visited {
+                 color: @main-light;
+             }
+         }
+     }
+ }
+
+ .inner-wrap-flash,
+ .inner-wrap-breadcrumb,
+ .inner-wrap-main,
+ .inner-wrap-after-main,
+ .inner-wrap-footer {
+     .row {
+         background: rgba(40, 35, 34, 0.9);
+         border-left: 2px solid rgba(0,0,0,0.2);
+         border-right: 2px solid rgba(0,0,0,0.2);
+         }
+}
+
+.inner-wrap-footer {
+    .row {
+        background: url('../img/photo_leaves.png') top center no-repeat;
+    }
+}
+
+.flash-wrap {
+    height: 0;
+    display: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: @comp-lightest;
+}
+
+a:link,
+a:visited {
+    color: @main-light;
+}
+
+a:active,
+a:hover {
+    color: @main-lightest;
+}

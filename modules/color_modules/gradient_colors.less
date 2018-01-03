@@ -1,0 +1,193 @@
+/** Footer */
+
+.site-footer {
+    background: linear-gradient(@silver-dark, @silver);
+    color: @silver-dark;
+
+    p {
+        background-color: @silver-dark;
+        color: @silver-light;
+    }
+
+    a:link,
+    a:visited {
+        text-decoration: none;
+        color: @gradient-two;
+    }
+
+    a:active,
+    a:hover {
+        color: @silver-light;
+    }
+}
+
+.footer-column {
+    border-top: 2px solid rgba(0,0,0,0.2);
+    text-align: center;
+
+    a:link,
+    a:visited {
+        color: @gradient-two;
+    }
+}
+
+/** Header */
+
+.site-logo-text {
+    a:link,
+    a:visited {
+        color: @silver;
+    }
+
+    a:hover,
+    a:active {
+        color: @silver-light;
+    }
+}
+
+.navbar2 {
+    ul {
+        li {
+            box-sizing: border-box;
+            height: 64px;
+
+            a:link,
+            a:visited {
+                color: @silver;
+            }
+
+            a:active,
+            a:hover {
+                color: @silver-light;
+            }
+        }
+        li:hover {
+            background-color: @gradient-two;
+            background: rgba(0,0,0,0.1);
+            border-bottom: 5px solid @silver;
+        }
+    }
+}
+.outer-wrap-header {
+    background-color: @gradient-one;
+    background: linear-gradient(@gradient-one, @gradient-two);
+    border-bottom: 5px solid #000;
+}
+
+.rm-max {
+    .rm-small {
+        .rm-button {
+            color: @silver;
+        }
+    }
+}
+
+/** Main layout elements.
+ * Background from Subtle Patterns
+ */
+
+ body {
+     background: url('../img/perspective.png') center center no-repeat #fff;
+     background-attachment: fixed;
+ }
+
+ .breadcrumb-list {
+     ul {
+         background-color: @silver;
+         background: linear-gradient(@silver-light, @silver);
+         border-bottom: 2px solid @silver-dark;
+
+         li {
+             a:link,
+             a:visited {
+                 color: @silver-dark;
+             }
+
+             a:active,
+             a:hover {
+                 color: @gradient-two;
+             }
+         }
+
+         li:last-child {
+             a:link,
+             a:visited {
+                 color: @gradient-two;
+             }
+         }
+     }
+ }
+
+ .wrap-all {
+     min-height: 100vh;
+ }
+
+ .inner-wrap {
+     margin: 0;
+     max-width: 100vw;
+     overflow: hidden;
+ }
+
+ .inner-wrap-flash {
+     height: 0;
+     display: none;
+ }
+
+ .site-footer {
+     #vgrid .column(12);
+ }
+
+ .footer-column {
+     #vgrid .column(3);
+
+     ul {
+         list-style-type: none;
+     }
+ }
+
+ .footer-column:nth-child(2) {
+     #vgrid .column(5);
+ }
+
+ .footer-column-wrapper {
+     #vgrid .push(1);
+ }
+
+ .sidebar-left {
+     #vgrid .column(2);
+     #vgrid .push(1);
+ }
+
+ main.has-sidebar-left {
+     #vgrid .column(8);
+ }
+
+ .inner-wrap-flash,
+ .inner-wrap-breadcrumb,
+ .inner-wrap-main,
+ .inner-wrap-after-main,
+ .inner-wrap-footer {
+     .row {
+         background: rgba(255,255,255,0.3);
+         border-left: 2px solid rgba(0,0,0,0.2);
+         border-right: 2px solid rgba(0,0,0,0.2);
+         }
+}
+
+.wrap-all {
+    background: rgba(255,255,255,0.7);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: @silver-darkest;
+}
+
+a:link,
+a:visited {
+    color: @silver-dark;
+}
+
+a:active,
+a:hover {
+    color: @silver;
+}

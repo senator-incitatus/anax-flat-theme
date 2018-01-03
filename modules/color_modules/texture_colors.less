@@ -1,0 +1,136 @@
+/** Footer */
+
+.site-footer {
+    background-color: @light-green;
+    color: @lighter-green;
+
+    p {
+        background-color: @dark-green;
+        color: @std-link;
+    }
+
+    a:link,
+    a:visited {
+        text-decoration: none;
+        color: @lighter-green;
+    }
+
+    a:active,
+    a:hover {
+        color: @std-link;
+    }
+}
+
+.footer-column {
+    border-top: 2px solid rgba(0,0,0,0.2);
+    color: @darker-green;
+
+    a:link,
+    a:visited {
+        text-decoration: none;
+        color: @dark-green;
+    }
+
+    a:active,
+    a:hover {
+        color: @light-green;
+    }
+}
+
+/** Header */
+
+.site-logo-text {
+    font-family: @headerFont;
+
+    a:link,
+    a:visited {
+        color: @std-link;
+    }
+
+    a:hover,
+    a:active {
+        color: @light-green;
+    }
+}
+
+.navbar2 {
+    ul {
+        li {
+
+            a:link {
+                color: @light-green;
+            }
+            a:visited,
+            a:active,
+            a:hover {
+                color: @std-link;
+            }
+        }
+        li:hover {
+            background-color: @light-green;
+        }
+    }
+}
+
+.outer-wrap-header {
+    background-color: @darker-green;
+}
+
+.rm-max {
+    .rm-small {
+        .rm-button {
+            color: @std-link;
+        }
+    }
+}
+
+/** Main layout elements.
+ * Background from Subtle Patterns
+ */
+
+ body {
+     background: url('../img/concrete-texture.png') top left repeat #fff;
+ }
+
+ .breadcrumb-list {
+     ul {
+         background-color: @dark-green;
+
+         li {
+             a:link {
+                 color: @light-green;
+             }
+             a:visited,
+             a:active,
+             a:hover {
+                 color: @std-link;
+             }
+         }
+     }
+ }
+
+ .inner-wrap-flash,
+ .inner-wrap-breadcrumb,
+ .inner-wrap-main,
+ .inner-wrap-after-main,
+ .inner-wrap-footer {
+     .row {
+         background: rgba(255,255,255,0.4);
+         border-left: 2px solid rgba(0,0,0,0.2);
+         border-right: 2px solid rgba(0,0,0,0.2);
+         }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: @dark-green;
+}
+
+a:link,
+a:visited {
+    color: @dark-green;
+}
+
+a:active,
+a:hover {
+    color: @light-green;
+}
