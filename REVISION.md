@@ -1,6 +1,10 @@
 Revision history
 ===============================
 
+v10.0.0(2018-01-11)
+-------------------------------
+* Tagged up to 10
+
 v6.0.0(2018-01-03)
 -------------------------------
 * Added three themes; texture, photo, and gradient
